@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Mover : MonoBehaviour
 {
+    [SerializeField] float movementSpeed;
+
     float xIncrement;
     float zIncrement;
 
@@ -17,8 +19,8 @@ public class Mover : MonoBehaviour
     void Update()
     {
         // Translate the object.
-        xIncrement = Input.GetAxis("Horizontal");
-        zIncrement = Input.GetAxis("Vertical");
+        xIncrement = Input.GetAxis("Horizontal") * Time.deltaTime * movementSpeed;
+        zIncrement = Input.GetAxis("Vertical") * Time.deltaTime * movementSpeed;
         transform.Translate(xIncrement, 0f, zIncrement);
     }
 }
