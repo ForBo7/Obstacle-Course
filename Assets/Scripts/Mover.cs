@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Mover : MonoBehaviour
 {
+    /// <summary>
+    /// A class to control the player.
+    /// </summary>
+
     [SerializeField] float movementSpeed;
 
     float xIncrement;
