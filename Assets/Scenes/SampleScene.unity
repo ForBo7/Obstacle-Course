@@ -304,6 +304,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cap Man
       objectReference: {fileID: 0}
+    - target: {fileID: 2792317840611517737, guid: 90dbca0e3d5d1462eb8cbb971e11d97e, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90dbca0e3d5d1462eb8cbb971e11d97e, type: 3}
 --- !u!1 &705507993
@@ -517,6 +521,63 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1001 &1219473803
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4732654229968034078, guid: 06f904d3386d048d79741a4244f568b9, type: 3}
+      propertyPath: m_Name
+      value: Spinning Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7634853509175215991, guid: 06f904d3386d048d79741a4244f568b9, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7634853509175215991, guid: 06f904d3386d048d79741a4244f568b9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7634853509175215991, guid: 06f904d3386d048d79741a4244f568b9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7634853509175215991, guid: 06f904d3386d048d79741a4244f568b9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7634853509175215991, guid: 06f904d3386d048d79741a4244f568b9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7634853509175215991, guid: 06f904d3386d048d79741a4244f568b9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7634853509175215991, guid: 06f904d3386d048d79741a4244f568b9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7634853509175215991, guid: 06f904d3386d048d79741a4244f568b9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7634853509175215991, guid: 06f904d3386d048d79741a4244f568b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7634853509175215991, guid: 06f904d3386d048d79741a4244f568b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7634853509175215991, guid: 06f904d3386d048d79741a4244f568b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 06f904d3386d048d79741a4244f568b9, type: 3}
 --- !u!1 &1315362249
 GameObject:
   m_ObjectHideFlags: 3
@@ -842,7 +903,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.84792626, y: 1}
+    m_SensorSize: {x: 2.5529954, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -931,6 +992,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 468859ade8cd2438e96d6ad46e95f033, type: 3}
+--- !u!1 &2074316931 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4732654229968034078, guid: 06f904d3386d048d79741a4244f568b9, type: 3}
+  m_PrefabInstance: {fileID: 1219473803}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2074316932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074316931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae8584a337ad844c38771026220513fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xRotation: 0
+  yRotation: 0
+  zRotation: 0
 --- !u!1001 &4198814304381923635
 PrefabInstance:
   m_ObjectHideFlags: 0
