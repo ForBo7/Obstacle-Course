@@ -12,7 +12,11 @@ public class Scorer : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         /// Increment the number of collisions and display it.
-        ++numberOfCollisons;
-        Debug.Log($"You've collided {numberOfCollisons} times!");
+        if (collision.gameObject.tag != "Hit")
+        {
+            ++numberOfCollisons;
+            collision.gameObject.tag = "Hit";
+            Debug.Log($"You've collided {numberOfCollisons} times!");
+        }
     }
 }
