@@ -13,6 +13,6 @@ public class Scorer : MonoBehaviour
     {
         /// Increment the number of collisions and display it.
         ++numberOfCollisons;
-        Debug.Log("You've collided " + numberOfCollisons + " times!");
+        Debug.Log($"You've collided {numberOfCollisons} times!");
     }
 }
